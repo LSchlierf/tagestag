@@ -2,7 +2,7 @@ import './App.css';
 
 function getMonth(initial, cur) {
   if (initial.getDate() === cur.getDate()) {
-    let month = cur.getMonth() - initial.getMonth() + (24 * (cur.getYear() - initial.getYear()))
+    let month = cur.getMonth() - initial.getMonth() + (12 * (cur.getYear() - initial.getYear()))
 
     return <div className='month'>
       ({month}. Monatstag)
